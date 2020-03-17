@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding='utf-8'?>       
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- Related to connection -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/HomeServices</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Password1</property>
+
+
+		<!-- Related to JDBC connection pool -->
+		<property name="connection.pool_size">1</property>
+
+
+		<!-- Related to hibernate property -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="cache.provider_class">org.hibernate.cache.NoChacheProvider</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		
+		<property name="hibernate.current_session_context_class">thread</property>
+
+
+		<!-- Names the annotated entity class 
+		<mapping class="com.owc.model.Student_Info" />
+		<mapping class="com.owc.model.Customers" />
+		<mapping class="com.owc.model.Users" />
+		<mapping class="com.owc.model.RouteAndFare" />
+		<mapping class="com.owc.model.Riders" />-->
+		<mapping class="com.neha.model.UserDetails" />
+		<mapping class="com.neha.model.ServiceCost" />
+		<mapping class="com.neha.model.CostDetails" />
+		<mapping class="com.neha.model.Admin" />
+
+	</session-factory>
+</hibernate-configuration>
+
