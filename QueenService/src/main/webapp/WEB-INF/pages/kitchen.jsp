@@ -9,9 +9,10 @@
  <%@ include file="headerfinal.jsp" %>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.row {
+.mm {
   position: relative;
-  width: 80%;
+  width: 100%;
+  padding: 16px 32px;
 }
 
 .image {
@@ -30,16 +31,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
+  
 }
 
-.row:hover .image {
+.mm:hover .image {
   opacity: 0.3;
 }
 
-.row:hover .middle {
+.mm:hover .middle {
   opacity: 1;
 }
 
@@ -48,6 +51,10 @@
   color: black;
   font-size: 16px;
   padding: 16px 32px;
+}
+.aa {
+ 
+  background-color: lightgrey;
 }
 
 
@@ -61,49 +68,77 @@
 <div class="row">
 
 	<div class="col-md-9">
+	<div class="mm">
   <img src="/QueenService/resources/images/kit22.jpg" alt="Avatar" class="image" style="width:100%">
   <div class="middle">
-    <div class="text"><b>Cases When you need a pest control therapy?</b>
+    <div class="text"><b>Cases When Kitchen cleaning is necessary?</b>
     <ul>
-    <li>Pest control often needed in old castle as well as in pre construction time.</li>
-    <li>You are fond of lying on sofa and one day you found your sofas legs got crashed due to heavy termite attacks</li>
-    <li>Now days termites attack are so common in old buildings offices or in garden area in front of your home and force you to think how to get rid of them</li>
+    <li>LPG kit fitting may necessary when you choose modular kitchen settings.</li>
+    <li>You have recently arranged your loving daughter marriage and after farewell you noticed there are number of stains and spongy substances laying everywhere in your venue. Those spongy and creepy crusts may lead to breeding of harmful bacteria.</li>
+    <li>
+Your family doctor recently warned to aware from dust and dirt but getting failed to achieve your goal for keeping your surrounding clean</li>
     <li>Termites may occur in their favourable condition and their peak point may be your wardrobe, kitchen furniture, dining table and your castle walls too.</li>
     <li>Mice are also creating problem when they nibble your clothes and important documents.</li>
     </ul><br>
-    As a conclusion we may say that insect or pests are somehow very harmful to our property as well as our health.
+    Don’t let the problems to cover you properly. Just book your home services online at Queen's Service. We assist you at your door within time at affordable prices.
+
+We are easy to hire, expert in service and trustworthy.
     
     </div>
     </div>
   </div>
-
+</div>
 
 <div class="col-md-3">
 <b><c:forEach items="${msg}" var="v">
 <h3>Book full Kitchen Cleaning Service</h3> <b></b><h2>@ Rs<c:out value="${v.serviceCost}"/>
 </c:forEach><br></h2> </b>
 <br><br>
-<h4><b>Services under Pest control treatment:</b></h4>
-<h5>Termite mould treatment
-Bed bug control
-Wood borer treatment
-Mosquitos treatment</h5><br>
+<h4><b>"Cleaning to your surrounding keeps you Healthy-wealthy and Prosperous"</b><br><br>
+Price of services  will be charged individually.<br><br><br>
 
 
-<h5>Cockroach control
-Rodent control
-Anti termite soil treatment
-Termite treatments in building</h5><br>
+We are trustworthy and expert in serving best quality services.<br><br><br>
 
 
-<h5>Rats instrument installation
-Pre and post construction termite control
-Bee, Lizards and wild birds control</h5><br><br>
+we provide all the facilities temporarily and permanently both.</h4><br><br>
 
 
 <a href="/QueenService/booking" class="btn btn-info" role="button">Book Now</a>
 </div>
 </div>
+
+<div class="aa">
+<div class="row">
+<center><h3><b>Services include in kitchen cleaning</b></h3></center>
+</div>
+
+<div class="row"><h4>
+<div class="col-md-3 col-md-offset-1">
+<ul>
+<li>Window & Exhaust Fan</li>
+<li>Wiping of Appliances from Outside</li>
+<li>Cabinets from outside</li>
+
+</ul></div>
+<div class="col-md-3 col-md-offset-1">
+<ul>
+<li>Kitchen Platform</li>
+<li>Cobwebs Removal</li>
+
+</ul>
+</div>
+<div class="col-md-3 col-md-offset-1">
+<ul>
+<li>Dry dusting of walls and ceiling</li>
+<li>Floor Scrubbing</li>
+
+</ul>
+</div>
+</h4>
+</div>
+</div>
+<br><br>
 <%@ include file="footerfinal.jsp" %>
 </body>
 </html>

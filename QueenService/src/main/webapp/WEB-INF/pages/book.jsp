@@ -38,16 +38,20 @@
   <td><input type="text" id="datepicker" name="date"> </td></tr>
   <tr><td>Enter complete address:</td>
   <td><textarea rows="4" cols="20" input type="text" name="address"></textarea> </td></tr>
-  <tr><td>Choose your service:</td>
+  <tr><td>Service:</td>
+  <td>Kitchen Cleaning</td>
+  <td><input type="hidden" name="service" value="Kitchen CLeaning">
+  <!--  <tr><td>Choose your service:</td>
   <td><select  name="service">
   <option value="kit">Kitchen-Cleaning</option>
   <option value="pest">Pest-Control</option>
   <option value="Plum">Plumbering</option>
   <option value="Plum">Electrician</option>
   <option value="Plum">Beautician</option>
-  <option value="Plum">Other Repair services</option></select></td></tr>
-  <!--  <tr><td>Your Price:</td>-->
-  <td><input type="hidden" name="price"> </td></tr>
+  <option value="Plum">Other Repair services</option></select></td></tr>-->
+   <tr><td>Your Price:</td>
+   <td>Rs 1500/-</td>
+  <td><input type="hidden" name="price" value="1500"> </td></tr>
   <td><input type="hidden" name="status" value="pending"></td></tr>
   <tr><td>Enter Service Details:</td>
   <td><textarea rows="6" cols="30" input type="text" name="details"></textarea></td></tr>

@@ -9,9 +9,10 @@
  <%@ include file="headerfinal.jsp" %>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.row {
+.mm {
   position: relative;
-  width: 80%;
+  width: 100%;
+  padding: 16px 32px;
 }
 
 .image {
@@ -30,16 +31,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
+  
 }
 
-.row:hover .image {
+.mm:hover .image {
   opacity: 0.3;
 }
 
-.row:hover .middle {
+.mm:hover .middle {
   opacity: 1;
 }
 
@@ -48,6 +51,10 @@
   color: black;
   font-size: 16px;
   padding: 16px 32px;
+}
+.aa {
+ 
+  background-color: lightgrey;
 }
 
 
@@ -61,49 +68,84 @@
 <div class="row">
 
 	<div class="col-md-9">
+	<div class="mm">
   <img src="/QueenService/resources/images/plumber4.jpg" alt="Avatar" class="image" style="width:100%">
   <div class="middle">
-    <div class="text"><b>Cases When you need a pest control therapy?</b>
+    <div class="text"><b>Whenever you need pipes operation?</b>
     <ul>
-    <li>Pest control often needed in old castle as well as in pre construction time.</li>
-    <li>You are fond of lying on sofa and one day you found your sofas legs got crashed due to heavy termite attacks</li>
-    <li>Now days termites attack are so common in old buildings offices or in garden area in front of your home and force you to think how to get rid of them</li>
-    <li>Termites may occur in their favourable condition and their peak point may be your wardrobe, kitchen furniture, dining table and your castle walls too.</li>
-    <li>Mice are also creating problem when they nibble your clothes and important documents.</li>
+    <li>Queen's Service really are able to handle a wide array of plumbing services that are complete, including shower plumbing, repairs to toilets, leaks, burst pipes and much more</li>
+    <li>We supply an all round service for bath room facilities, offering all electrical and pipes, heating work in a single complete package, with everything from fitting sinks to tiling and grouting supplied</li>
+    <li>Not only does this make life simpler for you, additionally, it means we provide a 12 month guarantee on all parts and labour, and you're in a position to take advantage of our great value rates.</li>
+    <li>Our team can also be accessible for emergency plumbing services, like busted water (and gas) pipes, boiler breakdowns, gas leaks and blocked conduits, offered 24*7 for customers across Harrow, Barnet and Islington.</li>
+    <li>We are providing online services to avoid messing up between customer and individual plumber. We also valuing time also and of course it’s luxurious to having all the services directly at home.</li>
     </ul><br>
-    As a conclusion we may say that insect or pests are somehow very harmful to our property as well as our health.
+    We offer you total plumbing option directly to your assumptions within time plus at price that is affordable. 
     
     </div>
     </div>
   </div>
-
+</div>
 
 <div class="col-md-3">
 <b><c:forEach items="${msg}" var="v">
 <h3>Book Plumber whose visiting charge is</h3> <b></b><h2>Rs<c:out value="${v.serviceCost}"/>
 </c:forEach><br></h2><br>Service charged as per your booking which will be displayed in your booking status </b>
 <br><br>
-<h4><b>Services under Pest control treatment:</b></h4>
-<h5>Termite mould treatment
-Bed bug control
-Wood borer treatment
-Mosquitos treatment</h5><br>
+<h4><b>"Plumbing is one of those services without whome we can't mainitain our lifestyle properly."</b><br><br><br><br>
+Material procurement time will be included in service time.<br><br><br>
 
 
-<h5>Cockroach control
-Rodent control
-Anti termite soil treatment
-Termite treatments in building</h5><br>
+Required Material cost is excluded from above cost.<br><br><br>
 
 
-<h5>Rats instrument installation
-Pre and post construction termite control
-Bee, Lizards and wild birds control</h5><br><br>
+They provide expert technicians to recognise problem and provide best solution in minimum price. <br><br>
 
 
-<a href="/QueenService/booking" class="btn btn-info" role="button">Book Now</a>
+<a href="/QueenService/bookplumber" class="btn btn-info" role="button">Book Now</a>
 </div>
 </div>
+<div class="aa">
+<div class="row">
+<center><h3><b>Top Services include</b></h3></center>
+</div>
+
+<div class="row"><h4>
+<div class="col-md-3 col-md-offset-1">
+<ul>
+<li>Minor plumbing repair</li>
+<li>Bathroom fittings installation</li>
+<li>Kitchen sink installation</li>
+<li>Water motor installation</li>
+<li>Water line connection establishment</li>
+<li>Bathroom Refurbishment</li>
+<li>Bathtub Installations</li>
+</ul></div>
+<div class="col-md-3 col-md-offset-1">
+<ul>
+<li>Burst Pipes removal and repairing</li>
+<li>Kitchen Refurbishment</li>
+<li>Leaks maintenance</li>
+<li>Overflows treatment</li>
+<li>Pipe work Replacement</li>
+<li>Pumps installation and removal</li>
+<li>Shower Enclosures installation and repairing</li>
+</ul>
+</div>
+<div class="col-md-3 col-md-offset-1">
+<ul>
+<li>Shower Pressure Adjustments</li>
+<li>Sinks and Basins cleaning</li>
+<li>Stopcock repairing and replacement</li>
+<li>Tap Repairs and Installations</li>
+<li>Toilet Repairs and Installations</li>
+<li>Washing Machine, Dishwasher Fitting</li>
+<li>Water Heater Repairs & Installation</li>
+</ul>
+</div>
+</h4>
+</div>
+</div>
+<br><br>
 <%@ include file="footerfinal.jsp" %>
 </body>
 </html>

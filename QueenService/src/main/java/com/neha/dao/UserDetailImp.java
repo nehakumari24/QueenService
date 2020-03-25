@@ -12,6 +12,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import com.neha.model.ServiceCost;
 import com.neha.model.UserDetails;
 
 public class UserDetailImp {
@@ -127,4 +128,25 @@ public List<UserDetails> getBookingStatus(int bookingId){
 	return bookingList;
 	
 }
+
+public  List<UserDetails> getBookingNo(int phone, String name){
+	
+	SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
+	Session session=sessionFactory.openSession();
+	session.beginTransaction();
+
+    Query query= session.createQuery("from UserDetails where phone = ? AND name = ? ");
+    query.setInteger(0, phone);
+    query.setString(1, name);
+	
+	List<UserDetails> bList= (List<UserDetails>) query.list();
+	
+	session.getTransaction().commit();
+	session.close();
+	sessionFactory.close();
+	
+	//gs.get(0).getServiceId();
+	return bList;
+}
+
 }

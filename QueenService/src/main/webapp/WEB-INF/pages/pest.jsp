@@ -9,9 +9,10 @@
  <%@ include file="headerfinal.jsp" %>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.row {
+.mm {
   position: relative;
-  width: 80%;
+  width: 100%;
+  padding: 16px 32px;
 }
 
 .image {
@@ -30,16 +31,36 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+  
+}
+
+.mid{
+transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+.cc:hover .mid {
+  opacity: 1;
+}
 
-.row:hover .image {
+.cc:hover .img-circle {
+opacity: 0.5;
+}
+.mm:hover .image {
   opacity: 0.3;
 }
 
-.row:hover .middle {
+.mm:hover .middle {
   opacity: 1;
 }
 
@@ -48,6 +69,10 @@
   color: black;
   font-size: 16px;
   padding: 16px 32px;
+}
+.aa {
+ 
+  background-color: lightgrey;
 }
 
 
@@ -61,6 +86,7 @@
 <div class="row">
 
 	<div class="col-md-9">
+	<div class="mm">
   <img src="/QueenService/resources/images/pest1.jpg" alt="Avatar" class="image" style="width:100%">
   <div class="middle">
     <div class="text"><b>Cases When you need a pest control therapy?</b>
@@ -76,7 +102,7 @@
     </div>
     </div>
   </div>
-
+</div>
 
 <div class="col-md-3">
 <b><c:forEach items="${msg}" var="v">
@@ -84,25 +110,66 @@
 </c:forEach><br></h2> </b>
 <br><br>
 
-<h4><b>Services under Pest control treatment:</b></h4>
-<h5>Termite mould treatment
+<h4><b>"Pest control is necessary as much as we avoid to disease from owns as well to keep our assets safe."</b><br><br><br>
+Termite mould treatment
 Bed bug control
 Wood borer treatment
-Mosquitos treatment</h5><br>
+Mosquitos treatment<br><br><br>
 
 
-<h5>Cockroach control
+Cockroach control
 Rodent control
 Anti termite soil treatment
-Termite treatments in building</h5><br>
+Termite treatments in building<br><br><br>
 
 
-<h5>Rats instrument installation
+Rats instrument installation
 Pre and post construction termite control
-Bee, Lizards and wild birds control</h5><br><br>
+Bee, Lizards and wild birds control<br><br><br>
 
 
-<a href="/QueenService/booking" class="btn btn-info" role="button">Book Now</a>
+<a href="/QueenService/bookpest" class="btn btn-info" role="button">Book Now</a>
+</div>
+</div>
+
+<div class="aa">
+<div class="row">
+<center><h3><b>Different Pest Control Services </b></h3></center>
+</div>
+
+<div class="row">
+<div class="col-md-2">
+<div class="cc">
+
+<img src="/QueenService/resources/images/cock.gif" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+
+<div class="mid">
+<div class="text"><b>Cockroach Control</b> <br>@ 1000-/</div>
+
+</div>
+</div>
+</div>
+<div class="col-md-2 col-md-offset-1">
+<div class="cc">
+<img src="/QueenService/resources/images/termite.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+
+<div class="mid">
+<div class="text"><b>Termite Control<br> @ 1000-/</b>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-md-offset-1">
+<div class="cc">
+<img src="/QueenService/resources/images/rat.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+
+<div class="mid">
+<div class="text"><b>Rat Control</b> <br>@ 1000-/</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-md-offset-1">
+
 </div>
 </div>
 <%@ include file="footerfinal.jsp" %>

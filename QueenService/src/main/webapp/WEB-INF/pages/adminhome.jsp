@@ -22,30 +22,32 @@
 <div class="col-md-8">
 
 <form class="form-horizontal" action="/QueenService/admin/home" method="POST">
-<div class="form-group">
+ <div class="form-group">
+<center><h2 class="colorA"></h2></center>
+  <h1>${msg}</h1>
 <label class="control-label col-md-8" for="userId"><h5><b>Admin ID</b></h5></label>
     <div class="col-md-4">
       <input type="text" class="form-control" name="userId" placeholder="Enter Admin id">
     </div>
     </div>
     <div class="form-group">
-<label class="control-label col-md-8" for="password"><h5><b>Admin ID</b></h5></label>
+<label class="control-label col-md-8" for="password"><h5><b>Password:</b></h5></label>
     <div class="col-md-4">
       <input type="password" class="form-control" name="password" placeholder="Enter Password">
     </div>
     </div>
     
-    </form>
+    
   
 
  
-<!--  <h2 class="colorA">Sign In</h2>
+ <!--<h2 class="colorA">Sign In</h2>
   <h1>${msg}</h1>
   Admin ID:<br>
   <input type="text" name="userId" ><br>
   Password:<br>
-  <input type="password" name="password" ><br><br>
-  <input type="submit" value="Submit" class="btn btn-success">-->
+  <input type="password" name="password" ><br><br>-->
+  <!--<input type="submit" value="Submit" class="btn btn-success">-->
   
   </div>
   <div class="col-md-4">
@@ -54,7 +56,7 @@
   <br><br><center><input type="submit" value="Submit" class="btn btn-success"></center>
   </div>
   
-  
+  </form>
 
 
 

@@ -32,6 +32,7 @@
 </div>
 <div class="col-md-5" >
 <h3>Your booking request is <b>pending</b> for Approval.<br>Check status to know your confirmation.<br>Thank You !!!!</h3>
+<a href="/QueenService/getbookingno">Click to get your booking id
 </div>
 <div class="col-md-5" >
 <img src="/QueenService/resources/images/con3.gif">
