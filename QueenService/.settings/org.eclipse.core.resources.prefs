@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/pages/aboutUs.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/pages/home.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/kitchen.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/pages/pest.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/viewElectrician.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/viewPlumber.jsp=UTF-8

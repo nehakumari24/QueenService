@@ -29,6 +29,13 @@ public class HomeController {
 		return model;
 	}
 	
+	@RequestMapping(value="/demo", method=RequestMethod.GET)
+	public ModelAndView getDemoForm() {
+
+		ModelAndView model = new ModelAndView("demo");
+		return model;
+	}
+	
 	@RequestMapping(value="/aboutus", method=RequestMethod.GET)
 	public ModelAndView getForm() {
 
@@ -49,6 +56,13 @@ public class HomeController {
 	public ModelAndView bookSuv() {
 
 		ModelAndView model = new ModelAndView("book");
+		return model;
+	}
+	
+	@RequestMapping(value="/bookingSalon", method=RequestMethod.GET)
+	public ModelAndView bookSalon() {
+
+		ModelAndView model = new ModelAndView("bookSalon");
 		return model;
 	}
 	
@@ -116,5 +130,22 @@ public ModelAndView getCustomerSuccessPage(@ModelAttribute("userdetails") UserDe
 		return model;
 	}
  
- 
+ @RequestMapping(value="/getbookingno", method=RequestMethod.GET)
+	public ModelAndView getbookingno() {
+
+		ModelAndView model = new ModelAndView("getBookingNo");
+		return model;
+	}
+ @RequestMapping(value="/checkBookingNo", method=RequestMethod.POST)
+	public ModelAndView getbookno(@ModelAttribute("userdetails") UserDetails userdetails, 
+			   BindingResult result) {
+		
+	 UserDetailImp book= new UserDetailImp();
+	 List<UserDetails> bList= book.getBookingNo(userdetails.getPhone(),userdetails.getName());
+		ModelAndView model = new ModelAndView("viewbookingno");
+		model.addObject("bList", bList);
+		return model;
+
+			
+		}
 }

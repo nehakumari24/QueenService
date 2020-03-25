@@ -1,6 +1,15 @@
 <html>
 <head>
 <%@ include file="headerfinal.jsp" %>
+ <script>
+        $(function () {
+            $('#selectServices').change(function () {
+                var selectedOption = $('#selectServices option:selected').val();
+                $('#divResult').val(selectedOption);
+                    
+            });
+        });
+    </script>
 <style>
 .aa {
  padding-left: 80px;
@@ -38,20 +47,19 @@
   <td><input type="text" id="datepicker" name="date"> </td></tr>
   <tr><td>Enter complete address:</td>
   <td><textarea rows="4" cols="20" input type="text" name="address"></textarea> </td></tr>
-  <tr><td>Service:</td>
-  <td>Plumber Booking</td>
-  <td><input type="hidden" name="service" value="Plumber">
-  <!--  <tr><td>Choose your service:</td>
-  <td><select  name="service">
-  <option value="kit">Kitchen-Cleaning</option>
-  <option value="pest">Pest-Control</option>
-  <option value="Plum">Plumbering</option>
-  <option value="Plum">Electrician</option>
-  <option value="Plum">Beautician</option>
-  <option value="Plum">Other Repair services</option></select></td></tr>-->
-   <tr><td>Your Price:</td>
-   <td>Rs 100/- [Visiting Charge]</td>
-  <td><input type="hidden" name="price" value="100"> </td></tr>
+  <tr><td>Choose your service:</td>
+  <td><select id="selectServices" name="service">
+        <option selected="selected" value="300">Waxing</option>
+        <option value="30">Threading</option>
+        <option value="500">Clean-up</option>
+        <option value="200">Pedicure</option>
+        <option value="200">Menicure</option>
+        <option value="NA">Haircut</option>
+        <option value="1000">Massage</option>
+        <option value="5000">Bridal Makeup</option>
+    </select></td></tr>
+  <tr><td>Your Price:</td>
+  <td><input type="text" id="divResult" name="price"> </td></tr>
   <td><input type="hidden" name="status" value="pending"></td></tr>
   <tr><td>Enter Service Details:</td>
   <td><textarea rows="6" cols="30" input type="text" name="details"></textarea></td></tr>

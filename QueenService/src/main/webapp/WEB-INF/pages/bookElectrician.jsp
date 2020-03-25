@@ -39,7 +39,7 @@
   <tr><td>Enter complete address:</td>
   <td><textarea rows="4" cols="20" input type="text" name="address"></textarea> </td></tr>
   <tr><td>Service:</td>
-  <td>Plumber Booking</td>
+  <td>Electrician Booking</td>
   <td><input type="hidden" name="service" value="Plumber">
   <!--  <tr><td>Choose your service:</td>
   <td><select  name="service">

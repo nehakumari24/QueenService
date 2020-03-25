@@ -101,10 +101,23 @@ public class ServiceController {
 			return model;
 		}
 
-	 @RequestMapping(value="/bookingplumber", method=RequestMethod.GET)
+	 @RequestMapping(value="/bookplumber", method=RequestMethod.GET)
 		public ModelAndView getPlumber() {
 
 			ModelAndView model = new ModelAndView("bookPlumber");
+			return model;
+		}
+	 
+	 @RequestMapping(value="/bookelectrician", method=RequestMethod.GET)
+		public ModelAndView getElectrician() {
+
+			ModelAndView model = new ModelAndView("bookElectrician");
+			return model;
+		}
+	 @RequestMapping(value="/bookpest", method=RequestMethod.GET)
+		public ModelAndView bookpest() {
+
+			ModelAndView model = new ModelAndView("bookPest");
 			return model;
 		}
 }
